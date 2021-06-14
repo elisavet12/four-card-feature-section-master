@@ -2,6 +2,9 @@ body {
   font-family: "Poppins";
 }
 
+.description {
+  display: block;
+}
 .cards {
   display: flex;
   flex-direction: row;
