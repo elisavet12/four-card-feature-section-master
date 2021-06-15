@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="stylesheet" href="./style.css" />
     <style>
       .attribution {
         font-size: 11px;
@@ -31,37 +31,45 @@
   </head>
   <body>
     <section class="description">
-      <h2>Reliable, efficient delivery</h2>
-      <h1>Powered by Technology</h1>
-      <h3>
+      <h2 class="subtitle">Reliable, efficient delivery</h2>
+      <h1 class="title">Powered by Technology</h1>
+      <h3 class="text">
         Our Artificial Intelligence powered tools use millions of project data
         points to ensure that your project is successful
       </h3>
     </section>
     <section class="cards">
-      <div class="cards-supervisor">
-        <h4>Supervisor</h4>
-        <p>Monitors activity to identify project roadblocks</p>
-        <img src="./images/icon-supervisor.svg" alt="/" />
-      </div>
-      <div class="cards-teambuilder">
-        <h4>Team Builder</h4>
-        <p>
-          Builder Scans our talent network to create the optimal team for your
-          project
-        </p>
-        <img src="./images/icon-team-builder.svg" alt="/" />
-      </div>
-      <div class="cards-karma">
-        <h4>Karma</h4>
-        <p>Regularly evaluates our talent to ensure quality</p>
-        <img src="./images/icon-karma.svg" alt="/" />
-      </div>
-      <div class="calculator">
-        <h4>Calculator</h4>
-        <p>Uses data from past projects to provide better delivery estimates</p>
-        <img src="./images/icon-calculator.svg" alt="/" />
-      </div>
+      <section class="column-one">
+        <div class="cards-supervisor">
+          <h4>Supervisor</h4>
+          <p>Monitors activity to identify project roadblocks</p>
+          <img class="image" src="./images/icon-supervisor.svg" alt="/" />
+        </div>
+      </section>
+      <section class="column-two">
+        <div class="cards-teambuilder">
+          <h4>Team Builder</h4>
+          <p>
+            Builder Scans our talent network to create the optimal team for your
+            project
+          </p>
+          <img class="image" src="./images/icon-team-builder.svg" alt="/" />
+        </div>
+        <div class="cards-karma">
+          <h4>Karma</h4>
+          <p>Regularly evaluates our talent to ensure quality</p>
+          <img class="image" src="./images/icon-karma.svg" alt="/" />
+        </div>
+      </section>
+      <section class="column-tree">
+        <div class="cards-calculator">
+          <h4>Calculator</h4>
+          <p>
+            Uses data from past projects to provide better delivery estimates
+          </p>
+          <img class="image" src="./images/icon-calculator.svg" alt="/" />
+        </div>
+      </section>
     </section>
 
     <footer>
