@@ -49,7 +49,7 @@ body {
 }
 
 .cards-supervisor {
-  border-style: solid;
+  border-style: inset;
   border-width: thin;
   border-top-color: hsl(180, 62%, 55%);
   margin: 26px;
@@ -62,16 +62,18 @@ body {
 }
 
 .cards-teambuilder {
-  border-style: solid;
+  border-style: inset;
   border-width: thin;
-  border-top-color: hsl(0, 78%, 62%);
+  
+  border-top: 4px solid hsl(0, 78%, 62%);
   margin: 26px;
   width: 354px;
   height: 251px;
+  border-radius: 8px;
 }
 
 .cards-karma {
-  border-style: solid;
+  border-style: inset;
   border-width: thin;
   border-top-color: hsl(34, 97%, 64%);
   margin: 26px;
@@ -80,7 +82,7 @@ body {
 }
 
 .cards-calculator {
-  border-style: solid;
+  border-style: inset;
   border-width: thin;
   border-top-color: hsl(212, 86%, 64%);
   margin: 26px;
