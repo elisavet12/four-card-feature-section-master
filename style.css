@@ -12,6 +12,9 @@ body {
   font-family: "Poppins";
   background: hsl(0, 0%, 98%);
   font-size: 15px;
+  padding: 90px 163px;
+  margin: 0px;
+  box-sizing: border-box;
   
 }
 
@@ -40,6 +43,8 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
+  
   
 }
 
@@ -47,6 +52,9 @@ body {
   border-style: solid;
   border-width: thin;
   border-top-color: hsl(180, 62%, 55%);
+  margin: 26px;
+  width: 354px;
+  height: 251px;
 }
 
 .cards-supervisor image {
@@ -57,20 +65,33 @@ body {
   border-style: solid;
   border-width: thin;
   border-top-color: hsl(0, 78%, 62%);
+  margin: 26px;
+  width: 354px;
+  height: 251px;
 }
 
 .cards-karma {
   border-style: solid;
   border-width: thin;
   border-top-color: hsl(34, 97%, 64%);
+  margin: 26px;
+  width: 354px;
+  height: 251px;
 }
 
 .cards-calculator {
   border-style: solid;
   border-width: thin;
   border-top-color: hsl(212, 86%, 64%);
+  margin: 26px;
+  width: 354px;
+  height: 251px;
 }
 
 .image {
   align-items: ;
+}
+
+.excerpt {
+  font-size: 12px;
 }
