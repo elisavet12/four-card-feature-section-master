@@ -51,10 +51,12 @@ body {
 .cards-supervisor {
   border-style: inset;
   border-width: thin;
-  border-top-color: hsl(180, 62%, 55%);
+  border-top: 4px solid hsl(180, 62%, 55%);
   margin: 26px;
   width: 354px;
   height: 251px;
+  border-radius: 6px;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .cards-supervisor image {
@@ -64,30 +66,34 @@ body {
 .cards-teambuilder {
   border-style: inset;
   border-width: thin;
-  
   border-top: 4px solid hsl(0, 78%, 62%);
   margin: 26px;
   width: 354px;
   height: 251px;
-  border-radius: 8px;
+  border-radius: 6px;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .cards-karma {
   border-style: inset;
   border-width: thin;
-  border-top-color: hsl(34, 97%, 64%);
+  border-top: 4px solid  hsl(34, 97%, 64%);
   margin: 26px;
   width: 354px;
   height: 251px;
+  border-radius: 6px;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .cards-calculator {
   border-style: inset;
   border-width: thin;
-  border-top-color: hsl(212, 86%, 64%);
+  border-top: 4px solid  hsl(212, 86%, 64%);
   margin: 26px;
   width: 354px;
   height: 251px;
+  border-radius: 6px;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .image {
