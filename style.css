@@ -121,3 +121,21 @@ body {
 .cards-title {
   margin: 19px 38px;
 }
+
+@media only screen and (max-width: 375px) {
+  body {
+    grid-template-columns: repeat(2, 1fr);}
+  }
+
+  .column-one {
+    display: grid;
+  
+  }
+
+  .column-two {
+    display: grid;
+  }
+
+  .column-three {
+    display: grid;
+  }
