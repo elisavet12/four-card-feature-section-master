@@ -12,17 +12,16 @@ body {
   font-family: "Poppins";
   background: hsl(0, 0%, 98%);
   font-size: 15px;
-  padding: 90px 163px;
-  margin: 0px;
+  margin: 90px 163px;
   box-sizing: border-box;
   
 }
 
 .description {
-  display: block;
+  display: inline-block;
   text-align: center;
   font-size: 28px;
-  margin: 60px 463px;
+  margin: 30px 463px;
 }
 
 .subtitle {
@@ -43,15 +42,16 @@ body {
   font-size: 15px;
   font-weight: 200;
   color: hsl(229, 6%, 66%);
-  padding: 26px 60px;
+  padding: 26px 32px;
   margin: 0px;
 }
 
 .cards {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: auto;
+  margin: 30px 162px;
+  
   
   
 }
@@ -80,7 +80,7 @@ body {
   width: 354px;
   height: 251px;
   border-radius: 6px;
-  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow:  0 4px 8px 0  hsl(229, 6%, 66%), 0 6px 20px 0 hsl(229, 6%, 66%);
 }
 
 .cards-karma {
@@ -91,8 +91,7 @@ body {
   width: 354px;
   height: 251px;
   border-radius: 6px;
-  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+  box-shadow:  0 4px 8px 0  hsl(229, 6%, 66%), 0 6px 20px 0 hsl(229, 6%, 66%);}
 
 .cards-calculator {
   border-style: inset;
@@ -102,7 +101,7 @@ body {
   width: 354px;
   height: 251px;
   border-radius: 6px;
-  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow:  0 4px 8px 0  hsl(229, 6%, 66%), 0 6px 20px 0 hsl(229, 6%, 66%);
 }
 
 .image {
@@ -124,11 +123,12 @@ body {
 
 @media only screen and (max-width: 375px) {
   body {
-    grid-template-columns: repeat(2, 1fr);}
+    grid-template-columns: repeat(1, 1fr);}
   }
 
   .column-one {
     display: grid;
+    align-self: center;
   
   }
 
@@ -138,4 +138,5 @@ body {
 
   .column-three {
     display: grid;
+    align-self: center;
   }
