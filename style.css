@@ -1,142 +1,126 @@
 :root {
---Red: hsl(0, 78%, 62%)
---Cyan: hsl(180, 62%, 55%)
---Orange: hsl(34, 97%, 64%)
---Blue: hsl(212, 86%, 64%)
---Very-Dark-Blue: hsl(234, 12%, 34%)
---Grayish-Blue: hsl(229, 6%, 66%)
---Very-Light-Gray: hsl(0, 0%, 98%)
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
 }
 
 body {
   font-family: "Poppins";
-  background: hsl(0, 0%, 98%);
+  background: var(--Very-Light-Gray);
   font-size: 15px;
-  margin: 90px 163px;
+
   box-sizing: border-box;
-  
+  padding: 72px 24px;
 }
 
 .description {
-  display: inline-block;
   text-align: center;
   font-size: 28px;
-  margin: 30px 463px;
+  margin: 0px auto;
+  max-width: 1110px;
 }
 
 .subtitle {
   font-size: 28px;
   font-weight: 400;
-  color: hsl(229, 6%, 66%);
+  color: var(--Grayish-Blue);
   margin: 0px;
 }
 
 .title {
   font-size: 30px;
   font-weight: 600;
-  color:hsl(234, 12%, 34%);
+  color: var(--Very-Dark-Blue);
   margin: 0px;
 }
 
 .text {
   font-size: 15px;
   font-weight: 200;
-  color: hsl(229, 6%, 66%);
+  color: var(--Grayish-Blue);
   padding: 26px 32px;
   margin: 0px;
 }
 
 .cards {
   display: grid;
-  grid-template-columns: 400px 400px 400px;
-  grid-template-rows: auto;
-  margin: 30px 162px;
-  
-  
-  
+  grid-template-columns: 1fr 1fr 1fr;
+
+  margin: 0px auto;
+  max-width: 1110px;
+  gap: 30px;
+}
+
+.column-one {
+  display: grid;
+  align-self: center;
+}
+
+.column-two {
+  display: grid;
+  gap: 30px;
+}
+
+.column-three {
+  display: grid;
+  align-self: center;
+}
+
+.card {
+  padding: 32px;
+  display: flow-root;
 }
 
 .cards-supervisor {
   border-style: inset;
   border-width: thin;
-  border-top: 4px solid hsl(180, 62%, 55%);
-  margin: 26px;
-  width: 354px;
-  height: 251px;
+  border-top: 4px solid var(--Cyan);
   border-radius: 6px;
-  box-shadow:  0 4px 8px 0 hsl(229, 6%, 66%), 0 6px 20px 0 hsl(229, 6%, 66%);
-}
-
-.cards-supervisor image {
-  text-align: right;
- 
+  box-shadow: 0 4px 8px 0 var(--Grayish-Blue), 0 6px 20px 0 var(--Grayish-Blue);
 }
 
 .cards-teambuilder {
   border-style: inset;
   border-width: thin;
-  border-top: 4px solid hsl(0, 78%, 62%);
-  margin: 26px;
-  width: 354px;
-  height: 251px;
+  border-top: 4px solid var(--Red);
   border-radius: 6px;
-  box-shadow:  0 4px 8px 0  hsl(229, 6%, 66%), 0 6px 20px 0 hsl(229, 6%, 66%);
+  box-shadow: 0 4px 8px 0 var(--Grayish-Blue), 0 6px 20px 0 var(--Grayish-Blue);
 }
 
 .cards-karma {
   border-style: inset;
   border-width: thin;
-  border-top: 4px solid  hsl(34, 97%, 64%);
-  margin: 26px;
-  width: 354px;
-  height: 251px;
+  border-top: 4px solid var(--Orange);
   border-radius: 6px;
-  box-shadow:  0 4px 8px 0  hsl(229, 6%, 66%), 0 6px 20px 0 hsl(229, 6%, 66%);}
+  box-shadow: 0 4px 8px 0 var(--Grayish-Blue), 0 6px 20px 0 var(--Grayish-Blue);
+}
 
 .cards-calculator {
   border-style: inset;
   border-width: thin;
-  border-top: 4px solid  hsl(212, 86%, 64%);
-  margin: 26px;
-  width: 354px;
-  height: 251px;
+  border-top: 4px solid var(--Blue);
   border-radius: 6px;
-  box-shadow:  0 4px 8px 0  hsl(229, 6%, 66%), 0 6px 20px 0 hsl(229, 6%, 66%);
+  box-shadow: 0 4px 8px 0 var(--Grayish-Blue), 0 6px 20px 0 var(--Grayish-Blue);
 }
 
 .image {
   float: right;
-  position: relative;
-    right: 27px;
-    bottom: -50px;
+}
+
+.cards-title {
+  margin: 0px;
 }
 
 .excerpt {
   font-size: 12px;
-  margin: 19px 38px;
-  
 }
 
-.cards-title {
-  margin: 19px 38px;
+@media only screen and (max-width: 1024px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
 }
-
-@media only screen and (max-width: 375px) {
-  body {
-    grid-template-columns: repeat(1, 1fr);}
-  }
-
-  .column-one {
-    display: grid;
-    align-self: center;
-  
-  }
-
-  .column-two {
-    display: grid;
-  }
-
-  .column-three {
-    display: grid;
-    align-self: center;
-  }
