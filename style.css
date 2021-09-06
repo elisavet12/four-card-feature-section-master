@@ -26,9 +26,7 @@ main {
 
 .description {
   text-align: center;
-  /* margin: 0px auto; */
   max-width: 1110px;
-  /* padding: 0em 31em; */
 }
 
 .subtitle {
@@ -60,7 +58,6 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0px auto;
-  /* max-width: 1110px; */
   gap: 2rem;
 }
 
@@ -81,7 +78,6 @@ main {
 
 .card {
   padding: 2.13rem;
-  /* display: flow-root; */
 }
 
 .cards-supervisor {
